@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/chat.js" defer></script>
+    <title>Chat with OpenAI</title>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center h-screen mx-auto">
+<div class="container-lg">
+        <h1 class="text-4xl font-bold text-center py-20">Chat with OpenAI</h1>
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-2xl min-w-[50%] min-h-[50%]">
+        <h1 class="text-2xl font-bold mb-4 text-center py-*">This is the GPT-3.5-turbo</h1>
+        <form id="chat-form">
+            <label for="user-prompt" class="block text-xlg mb-2"></label>
+            <textarea id="user-prompt" name="prompt" rows="8" class="w-full p-2 mb-4 bg-gray-700 text-white rounded-lg text-xl" required></textarea>
+            <button type="submit" id="button" class="w-50 h-15 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 align-bottom">Submit</button>
+        </form>
+        <div id="response" class="mt-4">
+            <h3 class="text-lg font-semibold">Response:</h3>
+            <p id="response-text" class="mt-2"></p>
+        </div>
+    </div>
+
+</body>
+</html>
